@@ -1,0 +1,45 @@
+Port                            443
+Protocol                        2
+
+SyslogFacility                  AUTH
+LogLevel                        INFO
+
+UsePAM                          no
+UseDNS                          no
+
+LoginGraceTime                  5
+PermitRootLogin                 no
+StrictModes                     yes
+
+RSAAuthentication               no
+PubkeyAuthentication            yes
+RhostsRSAAuthentication         no
+HostbasedAuthentication         no
+PasswordAuthentication          no
+ChallengeResponseAuthentication no
+
+PermitEmptyPasswords            no
+
+IgnoreRhosts                    yes
+IgnoreUserKnownHosts            no
+
+ClientAliveInterval             60
+ClientAliveCountMax             10
+
+AllowTCPForwarding              yes
+
+X11Forwarding                   no 
+
+AllowTcpForwarding              yes
+GatewayPorts                    no
+
+UsePrivilegeSeparation          yes
+PrintMotd                       no
+PrintLastLog                    yes
+KeepAlive                       yes
+UseLogin                        no
+PermitUserEnvironment           yes
+Compression                     yes
+MaxStartups                     3
+
+Subsystem                       sftp    /usr/lib/misc/sftp-server
