@@ -1,3 +1,2 @@
-# Apcupsd-devel internal configuration
 APCACCESS=/sbin/apcaccess
-ISCONFIGURED=no
+ISCONFIGURED=yes
